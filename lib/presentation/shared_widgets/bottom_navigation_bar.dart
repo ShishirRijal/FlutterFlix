@@ -34,9 +34,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
       children: const [
         HomeView(),
         Scaffold(body: Center(child: HeaderText("Coming Soon"))),
-        Scaffold(
-            backgroundColor: ColorManager.black,
-            body: Center(child: HeaderText("Search"))),
+        SearchView(),
         Scaffold(
             backgroundColor: ColorManager.black,
             body: Center(child: HeaderText("Downloads"))),
