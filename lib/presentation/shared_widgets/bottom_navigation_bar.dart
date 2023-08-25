@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutterflix/presentation/presentation.dart';
-import 'package:flutterflix/presentation/shared_widgets/shared_widgets.dart';
 
 List bottomNavItems = [
   {"icon": Icons.home, "text": "Home"},
@@ -35,9 +34,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
         HomeView(),
         ComingSoonView(),
         SearchView(),
-        Scaffold(
-            backgroundColor: ColorManager.black,
-            body: Center(child: HeaderText("Downloads"))),
+        DownloadView(),
       ],
     );
   }
