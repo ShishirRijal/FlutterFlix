@@ -33,7 +33,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
       index: activeTab,
       children: const [
         HomeView(),
-        Scaffold(body: Center(child: HeaderText("Coming Soon"))),
+        ComingSoonView(),
         SearchView(),
         Scaffold(
             backgroundColor: ColorManager.black,

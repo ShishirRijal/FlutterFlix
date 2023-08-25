@@ -17,7 +17,7 @@ class SearchView extends StatelessWidget {
           shrinkWrap: true,
           children: [
             const SizedBox(height: 10),
-            const HeaderText("Search", color: Colors.black),
+            const HeaderText("Search"),
             Padding(
               padding: const EdgeInsets.all(20.0),
               child: TextField(
@@ -25,7 +25,7 @@ class SearchView extends StatelessWidget {
                   FocusScope.of(context).unfocus();
                 },
                 style: const TextStyle(
-                  color: ColorManager.black,
+                  color: ColorManager.white,
                   fontSize: 20,
                 ),
                 keyboardType: TextInputType.text,
@@ -75,7 +75,7 @@ class SearchView extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 10),
-            const HeaderText("Popular Genres", color: ColorManager.black),
+            const HeaderText("Popular Genres"),
             Padding(
               padding: const EdgeInsets.fromLTRB(10, 0, 10, 10),
               child: GridView(
@@ -95,7 +95,7 @@ class SearchView extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 10),
-            const HeaderText("All Genres", color: ColorManager.black),
+            const HeaderText("All Genres"),
             Padding(
               padding: const EdgeInsets.fromLTRB(10, 0, 10, 10),
               child: GridView(

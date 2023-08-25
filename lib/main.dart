@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutterflix/core/core.dart';
 import 'package:flutterflix/presentation/shared_widgets/shared_widgets.dart';
 
 void main() {
@@ -10,8 +11,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: BottomNavBar(),
+    return MaterialApp(
+      theme: theme,
+      home: const BottomNavBar(),
     );
   }
 }
