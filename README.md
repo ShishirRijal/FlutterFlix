@@ -3,9 +3,7 @@
  
 Welcome to FlutterFlix, your go-to repository for building your very own Netflix-like streaming app using Flutter! This project aims to provide you with a foundation to create a feature-rich streaming platform that can deliver an exceptional user experience.
 
-## Features
 
-- ... (adding features here)
 
 ## Getting Started
 
@@ -43,7 +41,14 @@ Follow these steps to get started with developing your own FlutterFlix app:
 Use this checklist to guide your development process:
 
 - [x] Set up the basic project structure.
-- [ ] 
+- [x] HomexScreen View
+- [x] Search Screen View
+- [x] Download Screen View
+- [x] Upcomings Screen View
+- [ ] Models, Entities and Respective Mappers
+- [ ] Api Integration
+- [ ] Exception Handling
+- [ ] Caching Bookmarks
 - [ ] ... (adding more tasks as I need)
 
 ## Contribution
