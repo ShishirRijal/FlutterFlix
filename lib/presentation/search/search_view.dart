@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutterflix/presentation/resources/color_manager.dart';
 import 'package:flutterflix/presentation/shared_widgets/shared_widgets.dart';
 
-import '../../models/genre_model.dart';
+import '../../data/models/genre_model.dart';
 
 class SearchView extends StatelessWidget {
   const SearchView({Key? key}) : super(key: key);
@@ -170,7 +170,7 @@ class GenreTile extends StatelessWidget {
                       horizontal: 12.0, vertical: 4.0),
                   child: Text(
                     genre.name,
-                    style: TextStyle(
+                    style: const TextStyle(
                       fontWeight: FontWeight.w700,
                       color: Colors.white,
                     ),
