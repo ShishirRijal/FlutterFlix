@@ -1,5 +1,10 @@
+import 'package:freezed_annotation/freezed_annotation.dart';
+
 import 'models.dart';
 
+part 'tv_series_model.g.dart';
+
+@JsonSerializable(explicitToJson: true)
 class TvSeriesModel {
   final String? id;
   final String? title;
@@ -46,4 +51,10 @@ class TvSeriesModel {
     this.formattedDate,
     this.episodeRuntime,
   });
+
+  // to json
+  factory TvSeriesModel.fromJson(Map<String, dynamic> json) =>
+      _$TvSeriesModelFromJson(json);
+  // from json
+  Map<String, dynamic> toJson() => _$TvSeriesModelToJson(this);
 }
