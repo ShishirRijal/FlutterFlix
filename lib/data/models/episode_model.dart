@@ -1,5 +1,9 @@
-import 'cast_model.dart';
+import 'package:freezed_annotation/freezed_annotation.dart';
 
+import 'cast_model.dart';
+part 'episode_model.g.dart';
+
+@JsonSerializable(explicitToJson: true)
 class EpisodeModel {
   final String? id;
   final String? name;
@@ -24,4 +28,11 @@ class EpisodeModel {
     this.customDate,
     this.castInfoList,
   });
+
+  // to json
+  factory EpisodeModel.fromJson(Map<String, dynamic> json) =>
+      _$EpisodeModelFromJson(json);
+
+  // from json
+  Map<String, dynamic> toJson() => _$EpisodeModelToJson(this);
 }
