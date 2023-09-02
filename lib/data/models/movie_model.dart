@@ -1,5 +1,9 @@
-import 'models.dart';
+import 'package:freezed_annotation/freezed_annotation.dart';
 
+import 'models.dart';
+part 'movie_model.g.dart';
+
+@JsonSerializable(explicitToJson: true)
 class MovieModel {
   final String? id;
   final String? title;
@@ -51,4 +55,11 @@ class MovieModel {
     this.languages,
     this.trailer,
   });
+
+  // to json
+  factory MovieModel.fromJson(Map<String, dynamic> json) =>
+      _$MovieModelFromJson(json);
+
+  // from json
+  Map<String, dynamic> toJson() => _$MovieModelToJson(this);
 }
