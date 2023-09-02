@@ -1,5 +1,9 @@
-import 'episode_model.dart';
+import 'package:freezed_annotation/freezed_annotation.dart';
 
+import 'episode_model.dart';
+part 'season_model.g.dart';
+
+@JsonSerializable()
 class SeasonModel {
   final String? name;
   final String? overview;
@@ -17,4 +21,10 @@ class SeasonModel {
     this.customDate,
     this.episodes,
   });
+
+  // to json
+  factory SeasonModel.fromJson(Map<String, dynamic> json) =>
+      _$SeasonModelFromJson(json);
+  // from json
+  Map<String, dynamic> toJson() => _$SeasonModelToJson(this);
 }
