@@ -46,7 +46,7 @@ Use this checklist to guide your development process:
 - [x] Download Screen View
 - [x] Upcomings Screen View
 - [ ] Existing Pofiles Screen
-- [ ] Models, Entities and Respective Mappers
+- [x] Models, Entities and Respective Mappers
 - [ ] Api Integration
 - [ ] Exception Handling
 - [ ] Caching Bookmarks
